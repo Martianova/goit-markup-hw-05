@@ -568,30 +568,32 @@ address {
   position: absolute;
   top: 24px;
   right: 24px;
-  border-radius: 100%;
-  padding: 0;
-  line-height: 0;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 0;
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
-  fill: #ffffff;
   border: none;
 }
 .modal-close-btn-icon {
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn-icon:hover,
+.modal-close-btn-icon:focus {
+  fill: #ffffff;
 }
 /* --/Modal window-- */
 /* --Contacys form-- */
@@ -606,6 +608,9 @@ address {
 }
 .contacts-form-wrapper {
   margin-bottom: 8px;
+}
+.contacts-form-wrapper.comment {
+  margin-bottom: 16px;
 }
 .contacts-form-label {
   display: block;
